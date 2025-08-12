@@ -21,7 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # ✅ Fix Vite "crypto.hash is not a function" error
+      - name: Patch Node crypto
+        run: |
+          npm install crypto-browserify stream-browserify assert buffer process util --save-dev
+          echo "export default {};" > empty.js
+
       - name: Build project
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
         run: npm run build
 
       - name: Deploy to GitHub Pages
