@@ -16,19 +16,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
 
-      # Install polyfills for Vite crypto issue
-      - name: Install polyfills
-        run: |
-          npm install crypto-browserify stream-browserify assert buffer process util --save-dev
-
       - name: Build project
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
         run: npm run build
 
       - name: Deploy to GitHub Pages
