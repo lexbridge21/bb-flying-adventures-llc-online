@@ -1,0 +1,63 @@
+/* ✅ Tailwind must be the first import */
+@import "tailwindcss";
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+@custom-variant hover (&:hover);
+
+/* ✅ Custom fonts */
+@font-face {
+  font-family: "Blanco";
+  src: url("/fonts/blanco-italy.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blanco";
+  src: url("/fonts/blanco-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chiswick";
+  src: url("/fonts/chiswick-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chiswick";
+  src: url("/fonts/chiswick-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ✅ Custom theme variables */
+@theme {
+  --font-blanco: "Blanco", serif;
+  --font-chiswick: "Chiswick", serif;
+}
+
+/* ✅ Animations */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
