@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import BBLogo from "/BBLogo.svg";
 
 const allBlogs = [
   {
@@ -106,7 +105,7 @@ export default function TheJournal() {
                 {/* Curated by BB */}
                 <div className="flex items-center mt-auto">
                   <img
-                    src={BBLogo}
+                    src="/logo.svg"
                     alt="BB LLC Logo"
                     className="w-10 h-10 rounded-full"
                   />
