@@ -1,5 +1,4 @@
 import React from "react";
-import advisorImg from "/advisor.jpg"; // Update this path based on your project structure
 
 const WhyWork = () => {
   return (
@@ -27,7 +26,7 @@ const WhyWork = () => {
         {/* Image */}
         <div className="w-full lg:w-1/2">
           <img
-            src={advisorImg}
+            src="/advisor.jpg"
             alt="Advisor Poolside"
             className="w-full h-auto object-cover"
           />
