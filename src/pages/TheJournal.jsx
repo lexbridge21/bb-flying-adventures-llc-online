@@ -105,7 +105,7 @@ export default function TheJournal() {
                 {/* Curated by BB */}
                 <div className="flex items-center mt-auto">
                   <img
-                    src="/logo.svg"
+                    src="/BBLogo.svg"
                     alt="BB LLC Logo"
                     className="w-10 h-10 rounded-full"
                   />

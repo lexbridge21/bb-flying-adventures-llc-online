@@ -1,5 +1,3 @@
-import BBLogo from "/BBLogo.svg";
-
 export default function DefinitiveGuide() {
   return (
     <section className="bg-[#f8f5f1] px-6 py-12 md:px-16 lg:px-24">
@@ -16,7 +14,7 @@ export default function DefinitiveGuide() {
           {/* LOGO + TEXT */}
           <div className="flex items-center mb-6">
             <img
-              src={BBLogo}
+              src="/BBLogo.svg"
               alt="BB LLC Logo"
               className="w-12 h-12 rounded-full"
             />

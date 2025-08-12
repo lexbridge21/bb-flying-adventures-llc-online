@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BBLogo from "/BBLogo.svg";
 
 export default function TravelInspiration() {
   const blogs = [
@@ -47,7 +46,7 @@ export default function TravelInspiration() {
                 </h3>
                 <div className="flex items-center mt-auto">
                   <img
-                    src={BBLogo}
+                    src="/BBLogo.svg"
                     alt="BB LLC Logo"
                     className="w-10 h-10 rounded-full"
                   />
