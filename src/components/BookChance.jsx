@@ -1,9 +1,9 @@
 export default function BookChance() {
   return (
-    <section className="w-full px-4 py-12 lg:py-20 ">
+    <section className="w-full px-4 py-12 lg:py-20 mt-[3rem] ">
       <div className="max-w-4xl mx-auto flex flex-col gap-10">
         {/* Image comes first on small screens, second on large */}
-        <div className="order-1 lg:order-2 flex justify-center">
+        <div className="order-2 lg:order-2 flex justify-center">
           <img
             src="/private-jet.png"
             alt="Private Jet"
