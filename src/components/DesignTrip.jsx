@@ -80,11 +80,11 @@ export default function BookingForm() {
         body: JSON.stringify(formData),
       });
 
-      // Simulate 5s delay before showing success
+      // Simulate 9s delay before showing success
       setTimeout(() => {
         setLoading(false);
         setSubmitted(true);
-      }, 5000);
+      }, 9000);
     } catch (err) {
       console.error("Error sending email:", err);
       setLoading(false);
