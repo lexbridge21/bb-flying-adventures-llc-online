@@ -74,7 +74,7 @@ export default function BookingForm() {
     setLoading(true);
 
     try {
-      await fetch("/api/send-email", {
+      await fetch("https://bb-flying-backend.onrender.com/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
