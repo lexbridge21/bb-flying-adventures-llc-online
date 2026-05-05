@@ -16,6 +16,11 @@ const coFounders = [
     role: "Co-founder + Chief Product & Technology Officer",
     image: "/jake.png", // Replace with your own image URL
   },
+  {
+    name: "Lucy W. Davorka",
+    role: "Financial Officer",
+    image: "/f-officer.jpeg", // Replace with your own image URL
+  },
 ];
 
 const CoFounders = () => {
